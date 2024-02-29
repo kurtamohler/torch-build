@@ -53,9 +53,9 @@ export CMAKE_PREFIX_PATH=$CONDA_PREFIX
 # Use cudatoolkit from conda (see pytorch-dev.yaml)
 # If you have it installed system-wide (e.g. in qgpu) and you want to use it,
 # point CUDA_PATH and CMAKE_CUDA_COMPILER to the right folder
-export CUDA_PATH=$CONDA_PREFIX
+export CUDA_PATH=/usr/local/cuda-12.1.0/
 export CUDA_HOME=$CUDA_PATH
-export CMAKE_CUDA_COMPILER=$CONDA_PREFIX/bin/nvcc
+export CMAKE_CUDA_COMPILER=$CUDA_HOME/bin/nvcc
 
 # Note: targets/x86_64-linux is added because of the use of deprecated find_package(CUDA).
 # Usually `cuda_runtime.h` is found in CUDA_HOME and find_package(CUDA) expects that.
