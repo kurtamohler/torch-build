@@ -81,3 +81,6 @@ dependencies:
   # torchbench dependencies that may cause issues if installed by pip
   # - pandas
   # - transformers
+
+  # npm is required for docs build
+  - nodejs
